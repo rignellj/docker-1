@@ -1,0 +1,6 @@
+# Volume is a special location outside of the container which stores
+# all the unique data.
+
+# Create a volume named hatchery.
+
+docker volume create --name hatchery
