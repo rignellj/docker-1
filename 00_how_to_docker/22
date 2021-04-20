@@ -1,0 +1,13 @@
+# Turn Aiur into a slave of the local swarm in which Char is leader
+#  (the command to take control of Aiur is not requested).
+
+# 1. step
+# this next command need to be run inside the manager node's VM in order to
+# obtain the token for adding workers into swarm
+# VAR = <docker swarm join-token worker | grep token>
+
+# 2. step
+# this command is run inside the worker's VM that is added into swarm,
+# just copy/paste command output from the command above into VAR
+
+docker swarm join --token <VAR>
