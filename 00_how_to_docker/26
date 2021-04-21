@@ -3,5 +3,5 @@
 # This service will be named engineering-bay and
 # will be on the overmind network.
 
-docker service create --name engineering-bay --network overmind --replicas 2 \
+docker service create --name engineering-bay -d --network overmind --replicas 2 \
 -e OC_USERNAME=user -e OC_PASSWD=password 42school/engineering-bay

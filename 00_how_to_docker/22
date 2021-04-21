@@ -4,10 +4,10 @@
 # 1. step
 # this next command need to be run inside the manager node's VM in order to
 # obtain the token for adding workers into swarm
-# VAR = <docker swarm join-token worker | grep token>
+# OUTPUT = <docker swarm join-token worker | grep token>
 
 # 2. step
 # this command is run inside the worker's VM that is added into swarm,
-# just copy/paste command output from the command above into VAR
+# just copy/paste command output from the command above into OUTPUT
 
-docker swarm join --token <VAR>
+docker swarm join --token <OUTPUT>
